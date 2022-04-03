@@ -1,0 +1,16 @@
+
+
+<script>
+    // "let" fica apenas no escopo declarado
+
+    let teste = true;
+
+    if (teste == true) {
+        let testeInterno = 10; //apenas acessível dentro do if
+        console.log('teste ', teste)
+        console.log('testeInterno ', testeInterno);
+    }
+
+    console.log('testeInterno 2 ', testeInterno);
+
+</script>

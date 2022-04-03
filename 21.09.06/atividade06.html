@@ -1,0 +1,20 @@
+Crie um programa que faça a conversão de dólar para reais e de reais para dólar. 
+
+<script>
+
+    var opcao = parseInt(prompt('Escolha uma opção de conversão: \n 1. Dólar para Real. \n 2. Real para Dólar.'));
+    
+    if(opcao == 1) {
+        var escDol = parseInt(prompt('Quantos dólares você deseja converter para reais?'));
+        var conversao = escDol / 5.17;
+        alert(escDol + ' dólares = ' + conversao + ' reais.');
+
+    } else if(opcao == 2) {
+        var escReal = parseInt(prompt('Quantos reais você deseja converter para dólares?'));
+        var conversao = escReal * 5.17;
+        alert(escReal + ' reais = ' + conversao + ' dólares.');
+
+    } else {
+        alert('Escolha uma opção válida.');
+    }
+</script>

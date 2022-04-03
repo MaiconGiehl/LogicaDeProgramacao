@@ -1,0 +1,23 @@
+
+Nota <br/>
+<input id="nota" /> <br/><br/>
+
+<button onclick="calcular()">Calcular</button>
+
+<script>
+    let totalNotas = 0;
+    let qtdNotas = 0;
+
+    function calcular () {
+        console.log('estamos calculando.');
+
+        let nota = parseInt(document.querySelector('#nota').value);
+
+        totalNotas = totalNotas + nota;
+        qtdNotas = qtdNotas + 1;
+
+        alert(totalNotas / qtdNotas);
+    }
+
+  
+</script>

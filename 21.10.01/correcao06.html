@@ -1,0 +1,23 @@
+
+<script> 
+
+    let valorPrincipal = parseInt(prompt('Informe o valor principal'));
+    let qtdMeses = parseInt(prompt('Informe a quantidade de meses'));
+    let txJuroAnual = parseInt(prompt('Informe a taxa de juro anual'));
+
+    let txJuroMensal = txJuroAnual / 12;
+
+    let juroAcc = 0;
+
+    for(let mes = 0; mes < qtdMeses; mes++) {
+        let juroMes = (valorprincipal + juroAcc) * (txJuroMensal / 100);
+
+        juroAcc = juroAcc + juroMes;
+        
+        let valorFinal = valorPrincipal + juroAcc;
+
+        console.log('VP: ' + valorPrincipal + ' JM: ' + juroMes + ' JACC: ' + juroAcc + ' VF: ' + valorFinal);
+    }
+
+
+</script>

@@ -1,0 +1,35 @@
+Desenvolva um programa que recebe do usuário, o placar de um jogo de futebol (os gols de cada time) e
+ informa se o resultado foi um empate, se a vitória foi do primeiro time ou do segundo time.
+
+<script>
+    var t1 = parseInt(prompt('Quantos foram os gols do primeiro time?'));
+    var t2 = parseInt(prompt('Quantos foram os gols do segundo time?'));
+
+    if (t1 > t2) {
+        alert('O primeiro time foi o vencedor, com ' + t1 + ' gols.')
+
+    } else if (t1 < t2) {
+        alert('O segundo time foi o vencedor, com ' + t2 + ' gols.')
+
+    } else if (t1 = t2) {
+        alert('O resultado foi empate, com ' + t1 + ' gols de ambos os lados.')
+    }
+
+    /*
+
+    var nomeTimeA = prompt('digite o nome do time A: ');
+    var nomeTimeB = prompt('digite o nome do time B: ');
+
+    var golsTImeA = parseInt(prompt('digite a quantidade de gols do ' + nomeTimeA));
+    var golsTImeB = parseInt(prompt('digite a quantidade de gols do ' + nomeTimeB));
+
+    alert(nomeTimeA + ': ' + golsTImeA + ' x ' + golsTImeB + ': ' + nomeTimeB)
+    if(golsTimeA > golsTimeB) {
+        alert('O time ' + nomeTimeA + ' é o vencedor!');
+    } else if (golsTimeA < golsTimeB) {
+        alert('O time ' + nomeTimeB + ' é o vencedor!');
+    }
+
+    */
+
+</script>

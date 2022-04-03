@@ -1,0 +1,41 @@
+Crie um programa que receba 4 notas de 1 até 10 após calcule a média, caso a média for maior ou igual a 8 mostra uma mensagem dizendo ‘Aprovado’ caso contrário ‘Reprovado’.
+
+<script>
+        var nota1 = 0;
+        while(nota1 > 10 || nota1 < 1) {
+            nota1 = parseInt(prompt('Insira a primeira nota:'));
+                if(nota1 > 10 || nota1 < 1) {
+                alert('Insira um valor valido (de 1 a 10)');
+            }
+        }
+        var nota2 = 0;
+        while(nota2 > 10 || nota2 < 1) {
+            nota2 = parseInt(prompt('Insira a segunda nota:'));
+                if(nota2 > 10 || nota2 < 1) {
+                alert('Insira um valor valido (de 1 a 10)');
+            }
+        }
+        var nota3 = 0;
+        while(nota3 > 10 || nota3 < 1) {
+            nota3 = parseInt(prompt('Insira a terceira nota:'));
+                if(nota3 > 10 || nota3 < 1) {
+                alert('Insira um valor valido (de 1 a 10)');
+            }
+        }
+        var nota4 = 0;
+        while(nota4 > 10 || nota4 < 1) {
+            nota4 = parseInt(prompt('Insira a quarta nota:'));
+                if(nota4 > 10 || nota4 < 1) {
+                alert('Insira um valor valido (de 1 a 10)');
+            }
+        }
+        
+    var media = (nota1 + nota2 + nota3 + nota4) / 4;
+
+    if (media >= 8) {
+        alert('Aprovado! Sua média foi: ' + media + '.');
+    } else if (media < 8) {
+        alert('Reprovado! Sua média foi: ' + media + '.');
+    }
+
+</script>

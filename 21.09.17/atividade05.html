@@ -1,0 +1,29 @@
+Faça uma função que recebe a média final de um aluno por parâmetro e retorna o seu conceito, seguindo a seguinte regra: 
+de 0 a 49 conceito D,  
+de 50 a 69 conceito C, 
+de 70 a 89 B,  
+de 90 a 100 conceito A.
+
+<script>
+
+    var medF = parseInt(prompt('Digite a média final do aluno'));
+
+    function conceito(medF) {
+        if(medF >= 0 && medF <= 49) {
+            return 'O conceito é D';
+        }
+        else if(medF >= 50 && medF <= 69) {
+            return 'O conceito é C'
+        }
+        else if(medF >= 70 && medF <= 89) {
+            return 'O conceito é B'
+        }
+        else if(medF >= 90 && medF <= 100) {
+            return 'O conceito é A'
+        }
+    }
+
+    let resultado = conceito(medF)
+    alert(resultado);
+
+</script>

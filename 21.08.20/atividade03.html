@@ -1,0 +1,30 @@
+A empresa SuperTech está com dificuldades para calcular o valor líquido que o colaborador irá receber. Crie um sistema para calcular o salário líquido, considere que: 
+a) salários de R$ 1.500,00 até R$ 2.000,00  terão 10% de desconto em impostos, 
+b)  salários R$ 2.000 até R$ 2.500,00 terão 15% de desconto em impostos, 
+c) salários acima de R$ 2.500,00 terão 18% de impostos. 
+
+<script>
+
+    var salarioBruto = parseInt(prompt('Digite o salário do colaborador:'));
+    var salarioLiquido;
+    
+    if (salarioBruto >= 1500 && salarioBruto < 2000) {
+        console.log(desconto = salarioBruto*10/100);
+        console.log(salarioLiquido = salarioBruto - desconto);
+        alert('O salário liquido do colaborador será ' + salarioLiquido);
+    }
+    
+    if (salarioBruto >= 2000 && salarioBruto < 2500) {
+        console.log(desconto = salarioBruto*15/100);
+        console.log(salarioLiquido = salarioBruto - desconto);
+        alert('O salário liquido do colaborador será ' + salarioLiquido);
+    }
+
+    if (salarioBruto >= 2500) {
+        console.log(desconto = salarioBruto*10/100);
+        console.log(salarioLiquido = salarioBruto - desconto);
+        alert('O salário liquido do colaborador será ' + salarioLiquido);
+    }
+    
+
+</script>

@@ -1,0 +1,30 @@
+
+Nota <br/>
+<input id="nota" /> <br/><br/>
+
+<button onclick="calcular()">Calcular</button>
+
+<script>
+    //utilizando vetor
+    let notas = [];
+
+    function calcular() {
+        console.log('estamos calculando.');
+
+        let nota = parseInt(document.querySelector('#nota').value);
+        notas.push(nota);
+
+        let somatorio = 0;
+
+        for(let i = 0; i < notas.length; i++) {
+            somatorio = somatorio + notas[i];
+        }
+
+        let media = somatorio / notas.length
+
+        alert(media);
+
+    }
+
+  
+</script>

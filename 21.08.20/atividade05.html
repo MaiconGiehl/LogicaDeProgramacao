@@ -1,0 +1,42 @@
+Crie um programa que receba uma nota de 0 até 100, após mostre o conceito de acordo com a tabela abaixo
+
+Nota            Conceito    
+de 0 a 49       D
+de 50 a 69      C
+de 70 a 89      B
+de 90 a 100     A
+
+<script>
+    var nota = parseInt(prompt('Digite a nota:'));
+
+    if (nota <= 49) {
+        alert('D')
+    }
+
+    if (nota >= 50 && nota <= 69) {
+        alert('C')
+    }
+
+    if (nota >= 70 && nota <= 89) {
+        alert('B')
+    }
+
+    if (nota >= 90 && nota <= 100) {
+        alert('A')
+    }
+
+    /* Gabarito
+     var nota = parseInt(prompt('Digite a nota:'));
+
+    if (nota < 50) {
+        alert('Nota:' + nota + '; Conceito: D')
+    } else if (nota > 51 && nota < 70) {
+        alert('Nota:' + nota + '; Conceito: C')
+    } else if (nota > 69 && nota < 89) {
+        alert('Nota:' + nota + '; Conceito: B')
+    } else if (nota > 90 && nota < 100) {
+        alert('Nota:' + nota + '; Conceito: A')
+    }
+    */
+
+</script>

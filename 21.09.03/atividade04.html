@@ -1,0 +1,31 @@
+Crie um jogo de adivinhação de número e enquanto o usuário não acertar o valor continue pedindo para informar o valor.
+
+<script>
+    var valor = parseInt(prompt('Adivinhe o valor!'));
+    var certo = 26
+        while (valor < certo || valor > certo) {
+          alert('errou moh burrao');
+          valor = parseInt(prompt('Adivinhe o valor!'));
+        }   if(valor == certo) {
+          alert('acertou parabainx, o valor certo era' + valor);
+        }
+      
+        console.log(valor)
+
+
+      /*
+      var segredo = 5;
+      var chute;
+      
+      while (chute != segredo) {
+        chute = parseInt(prompt('Adivinhe o valor: '));
+
+        If (chute == segredo) {
+          alert('Parabéns, você acertou!')
+
+        } else {
+          alert(errou trouxao)
+        }
+      }
+      */
+</script>

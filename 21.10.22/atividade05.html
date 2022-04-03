@@ -1,0 +1,25 @@
+Encontre os números pares de 1 até 200 e calcule a média aritmética dos números encontrados.
+
+<script>
+
+    var medidor = [];
+    var somaTotal = 0;
+
+    for (let indice = 1; indice <= 200; indice++) {
+
+        if (indice % 2 == 0) {
+
+            console.log('Este valor é par: ' + indice);
+
+            somaTotal = indice + somaTotal;
+            medidor.push(indice);
+            
+        }
+    }
+
+    var media = somaTotal / medidor.length;
+
+    console.log('');
+    console.log('Média aritmética: ' + media);
+
+</script>

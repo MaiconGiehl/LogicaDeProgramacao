@@ -1,0 +1,23 @@
+Crie um programa que recebe o valor do salário recebido e as despesas de aluguel, luz, água e cartão de credito. 
+Calcule o que sobrou do salário e qual a porcentagem de cada uma das despesas e da sobra.
+
+<script>
+
+    var salario = parseInt(prompt('Digite o valor do salário:'));
+    var aluguel = parseInt(prompt('Digite o valor do aluguel:'));
+    var luz = parseInt(prompt('Digite o valor da conta de luz:'));
+    var agua = parseInt(prompt('Digite o valor da conta de água:'));
+    var cartao = parseInt(prompt('Digite o valor da despesa com cartão de crédito:'));
+
+    var despesas = aluguel + luz + agua + cartao
+    var sobra = salario - despesas
+
+    var porcAl = (aluguel/salario)*100;
+    var porcLu = (luz/salario)*100;
+    var porcAg = (agua/salario)*100;
+    var porcCa = (cartao/salario)*100;
+    var porcSob = (sobra/salario)*100;
+
+    alert('A despesa total foi de ' + despesas + ' reais. O percentual de cada despesa dentro do salário é: \n Aluguel = ' + porcAl + '%; \n Luz = ' + porcLu + '%; \n Água = ' + porcAg + '%; \n Cartão de Crédito = ' + porcCa + '%. \n O que sobrou do sálario foi: ' + sobra + ' reais, que corresponde a ' + porcSob + '% do salário.');
+
+</script>

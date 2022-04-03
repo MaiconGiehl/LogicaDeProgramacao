@@ -1,0 +1,16 @@
+Crie um programa que peça a tabuada 1,2,... e até qual valor é para ser calculado partindo de 1 até o valor informado.
+
+<script>
+
+    var indice = parseInt(prompt('Qual tabuada você quer saber?'));
+    var limite = parseInt(prompt('Até qual número deve ser calculado?'));
+    var valorMult = 1;
+    var conta = 0;
+
+    while(limite > conta) {
+        conta = indice * valorMult;
+        console.log(indice + ' x ' + valorMult + ' = ' + conta);
+        valorMult = valorMult + 1;
+    }
+
+</script>

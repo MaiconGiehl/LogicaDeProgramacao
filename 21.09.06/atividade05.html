@@ -1,0 +1,17 @@
+Crie um programa que receba o nome de uma pessoa e valor que a pessoa ganha por hora. 
+Após peça para informar o nome de um produto e o valor total do produto (produto que a pessoa deseja comprar por exemplo: iphone, notebook, etc.). 
+Calcule e mostre quantas horas essa pessoa precisa trabalhar para comprar o produto informado. 
+
+<script>
+
+    var nome = prompt('Insira o nome:');
+    var salHora = parseInt(prompt('Insira quanto ganha por hora:'));
+
+    var produto = prompt('Digite um produto que deseja comprar:');
+    var valProd = parseInt(prompt('Digite o valor deste produto:'));
+
+    var tempTrab = valProd / salHora;
+
+    alert('Você precisará trabalhar por ' + tempTrab + ' horas para comprar ' + produto);
+
+</script>

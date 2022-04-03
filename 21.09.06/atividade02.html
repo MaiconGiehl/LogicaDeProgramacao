@@ -1,0 +1,28 @@
+Crie um programa que peça o nome do funcionário, o salário atual, após calcule o reajuste de salário de acordo com as regras: 
+a) salário até R$ 2.000,00 reajuste de 5%; 
+b) salários acima de R$ 2.000,00 até R$ 2.800,00 reajuste de 4,8% 
+e salário maiores que R$ 2.800,00 reajuste de 4,75%
+
+<script>
+
+    var nomeFunc = prompt('Digite o nome do funcionário:');
+    var salAtual = parseInt(prompt('Digite o salário atual:'));
+
+    if (salAtual <= 2000) {
+        var porcReaj = salAtual * 5/100;
+        var reajuste = salAtual + porcReaj;
+    }
+    
+    if (salAtual > 2000 && salAtual <= 2800) {
+        var porcReaj = salAtual * 4.8/100;
+        var reajuste = salAtual + porcReaj;
+    }
+
+    if (salAtual > 2800) {
+        var porcReaj = salAtual * 4.75/100;
+        var reajuste = salAtual + porcReaj;
+    }
+
+    alert('O salário de ' + nomeFunc + ' aumentará de ' + salAtual + ' para ' + reajuste);
+
+</script>

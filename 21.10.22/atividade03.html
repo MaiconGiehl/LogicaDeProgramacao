@@ -1,0 +1,44 @@
+Um posto de combustível concede descontos de acordo com a quantidade de litros abastecidos. O desconto é o mesmo para
+álcool, gasolina ou diesel.
+O desconto é definido da seguinte forma: até 20 litros 5% de descontos; de 20 até 50 litros 10% de desconto acima de 50
+litros 12% de desconto.
+
+<script>
+
+    var litros = parseInt(prompt('Quanto litros devem ser abastecidos?'));
+    var preco = parseInt(prompt('Qual o preço de um litro?'));
+
+    var valorBruto = (preco * litros);
+
+    if (litros <= 20) {
+
+        let porcDesc = 5;
+
+        let valorDesc = (valorBruto / 100) * porcDesc;
+        let valorFinal = valorBruto - valorDesc;
+
+        alert('O valor final será ' + valorFinal.toFixed(2) + 'R$, com desconto de ' + valorDesc.toFixed(2) + 'R$.');
+
+    } else if (litros > 20 && litros >= 50) {
+
+        let porcDesc = 10;
+
+        let valorDesc = (valorBruto / 100) * porcDesc;
+        let valorFinal = valorBruto - valorDesc;
+
+        alert('O valor final será ' + valorFinal.toFixed(2) + 'R$, com desconto de ' + valorDesc.toFixed(2) + 'R$.');
+
+    } else if (litros > 50) {
+
+        let porcDesc = 12;
+
+        let valorDesc = (valorBruto / 100) * porcDesc;
+        let valorFinal = valorBruto - valorDesc;
+
+        alert('O valor final será ' + valorFinal.toFixed(2) + 'R$, com desconto de ' + valorDesc.toFixed(2) + 'R$.');
+
+    } else {
+        alert('Insira um valor válido.');
+    }
+
+</script>

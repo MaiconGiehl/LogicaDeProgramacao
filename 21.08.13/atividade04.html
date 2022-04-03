@@ -1,0 +1,15 @@
+João é um investidor e ele quer um progrma para calcular o seu lucro nas suas operações financeiras. 
+Ele irá informar o capital inicial investido e o capital final, calcule o lucro ou prejuízo da operação.
+
+<script>
+    var CapIni = prompt('Digite o capital inicial:');
+    var capini = parseInt(CapIni);
+
+    var CapFin = prompt('Digite o capital final:');
+    var capfin = parseInt(CapFin);
+
+    var ValorFinal = capfin-capini;
+    var Porcentagem = (capfin-capini)/capini * 100;
+
+    alert('O seu lucro/prejuízo de operação foi de ' + ValorFinal + ' reais, que representa ' + Porcentagem + ' porcento de lucro/prejuízo.');
+</script>

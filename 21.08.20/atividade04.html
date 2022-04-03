@@ -1,0 +1,30 @@
+Crie um programa para calcular desconto de acordo com a forma de pagamento. Seguindo os seguintes passos:
+Solicitar o valor total da compra; 
+Solicitar a forma de pagamento que terá as seguintes opções: 
+1) pagamento à vista;
+2) pagamento cartão de débito; 
+3) pagamento cartão crédito; 
+Caso seja selecionado a opção 1 ou 2 o programa deverá aplicar 5% de desconto.
+
+<script>
+
+    var valorInicial = parseInt(prompt('Digite o valor total de sua compra:'));
+    var metPag = parseInt(prompt('Selecione o método de pagamento: \n 1. À vista \n 2. Cartão de crédito \n 3. Cartão de crédito'));
+  
+    if (metPag == 1) {
+        console.log(desconto = valorInicial*5/100);
+        console.log(valorDesc = valorInicial - desconto);
+        alert('O valor total de sua compra é de: ' + valorDesc + ' reais, tendo desconto de ' + desconto + ' reais do valor inicial.');
+    }
+
+    if (metPag == 2) {
+        console.log(desconto = valorInicial*5/100)
+        console.log(valorDesc = valorInicial - desconto);
+        alert('O valor total de sua compra é de: ' + valorDesc + ' reais, tendo desconto de ' + desconto + ' reais do valor inicial.');
+    }
+
+    if (metPag == 3) {
+        alert('O valor total de sua compra será: ' + valorInicial + '.');
+    }
+
+</script>

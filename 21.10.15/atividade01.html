@@ -1,0 +1,15 @@
+Crie um programa que pergunte a quantidade de moças e rapazes de uma determinada sala. Calcule a porcentagem de moças e rapazes.
+
+<script>
+    var mocas = parseInt(prompt('Qual a quantidade de moças na sala?'));
+    var rapazes = parseInt(prompt('Qual a quantidade de homens na sala?'));
+
+    var total = mocas + rapazes;
+
+    var porceMoc = mocas * 100 / total;
+    var porceRap = rapazes * 100 / total;
+    
+    alert('Moças = ' + porceMoc.toFixed(2) + '%, Rapazes = ' + porceRap.toFixed(2) + '%.');
+
+
+</script>

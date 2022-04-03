@@ -1,0 +1,28 @@
+Crie um programa que peça do usuário a quantidade de meses e a taxa de juro anual de um determinado investimento. 
+Calcule e mostre mês a mês o juro acumulado e o juro do mês.
+
+<script>
+    var valorPri = parseInt(prompt('Digite o valor do seu investimento:'))
+    var juroAnual = parseInt(prompt('Digite a taxa de juros anual do investimento'))
+    var total = valorPri;
+    var mes = 0;
+    var juroAcumulado = 0;
+
+
+    for(var qtdMeses = parseInt(prompt('Digite a quantidade de meses:')); mes <= qtdMeses; mes++) {
+
+
+        let taxaMensal = (juroAnual/12);
+        
+        let juroMes = (total * taxaMensal) / 100; 
+
+        juroAcumulado = juroMes * mes;
+
+        total = valorPri + juroAcumulado;
+        
+        
+        console.log('Valor Principal = ' + valorPri.toFixed(2) + ' , Juro do Mes = ' + juroMes.toFixed(2) + ' , Juro Acumulado = ' + juroAcumulado.toFixed(2) + ' , total = ' + total.toFixed(2) + '    ' );
+
+    }
+
+</script>

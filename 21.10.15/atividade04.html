@@ -1,0 +1,26 @@
+Criar a tabuada do 1 até 6. Fazendo de forma alternada. Na tabuada que for par mostra de 1 até 10 quando a tabuada for ímpar mostra de 10 até 1.
+
+<script>
+    for (var tabu = 1; tabu <= 6; tabu++) {
+
+        if (tabu % 2 == 0) {
+
+            console.log('Par');
+
+            for (var indice = 1; indice <= 10; indice++) {
+                var conta = tabu * indice;
+                console.log(tabu + ' x ' + indice + ' = ' + conta);
+            }
+        } else {
+
+            console.log('Impar');
+
+            for (var indice = 10; indice >= 1; indice--) {
+                var conta = tabu * indice;
+                console.log(tabu + ' x ' + indice + ' = ' + conta);
+            }  
+        }
+    }
+
+
+</script>

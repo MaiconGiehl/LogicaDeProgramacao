@@ -1,0 +1,19 @@
+Sherlock realizou três provas em uma determinada instituição, sendo que a nota final é calculada utilizando a média aritmética e para ser aprovado é necessário 
+obter uma nota maior que 70. Ajude ele criando um programa que solicite para informar as três notas e mostre o resultado da média. 
+Caso tenha atingido a média mostre uma mensagem na tela com os parabéns, caso contrário diga a ele que precisa estudar mais.
+
+<script>
+
+var nota1 = parseInt(prompt('Digite a nota 1:'));
+var nota2 = parseInt(prompt('Digite a nota 2:'));
+var nota3 = parseInt(prompt('Digite a nota 3:'));
+
+var media = (nota1 + nota2 + nota3) / 3
+
+if (media > 70) {
+    alert('Parabéns Sherlock, sua nota média foi ' + media + ', acima da média necessária. Continue assim.');
+} else {
+    alert('Sherlock, sua nota média foi ' + media + '. Você precisa estudar mais.');
+}
+
+</script>

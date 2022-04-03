@@ -1,0 +1,27 @@
+Uma certa operadora de telefonia móvel cobra R$ 5,00 mensais pelo seu plano básico de transmissão de SMS (mensagens de texto), 
+sendo que taxas adicionais são cobradas conforme as regras abaixo:
+a)      As primeiras 60 mensagens estão incluídas no plano básico;
+b)      Se o usuário mandar mais de 60 mensagens, cada mensagem adicional custará R$ 0.05, até o limite de 180 mensagens;
+c)      Acima de 180 mensagens, o valor de cada (mensagem adicional) uma delas passa a R$ 0,10;
+Com base nessas informações, crie um algoritmo para ler o número total de mensagens enviadas por um usuário. 
+Ao final, calcule o valor da conta e mostre a quantidade de mensagens do pacote e a quantidade de mensagens adicionais.
+
+<script>
+    var mensagens = parseInt(prompt('Insira o total de mensagens enviadas pelo usuário:'));
+    
+    if (mensagens > 180) {
+        let adicional = mensagens - 60;
+        let conta = adicional * 0.10;
+        alert('O valor a ser pago pelas ' + adicional + ' mensagens adicionais será: R$' + conta.toFixed(2) + '.');
+
+    } else if (mensagens <= 180 && mensagens > 60) {
+        let adicional = mensagens - 60;
+        let conta = adicional * 0.05;
+        alert('O valor a ser pago pelas ' + adicional + ' mensagens adicionais será: R$' + conta.toFixed(2) + '.');
+
+    } else {
+        alert('O valor será coberto pelo plano.');
+    }
+
+
+</script>

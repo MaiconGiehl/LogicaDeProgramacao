@@ -1,0 +1,27 @@
+Crie um programa com duas funções uma que recebe como parâmetro uma temperatura em graus Celsius 
+converta para Fahrenheit e retorne o valor e outra que recebe como parâmetro os graus em Fahrenheit 
+e converta para graus Celsius e retorno o valor. 
+Peça para o usuário qual conversão ele deseja fazer e qual a temperatura que ele quer converter.
+
+-- Fórmulas:  
+
+- Cº para Fº: (0 °C × 9/5) + 32 = 32 °F
+
+- Fº para Cº: (0 °F − 32) × 5/9 = -17,78 °C
+
+<script>
+    var opcao = parseInt(prompt('Escolha uma opcao: 1. Celsius para Fahrenheit 2. Fahrenheit para Celsius:'));
+
+
+    if (opcao == 1) {
+        let celsius = parseInt(prompt('Digite a quantidade de celsius que deseja converter para fahrenheit:')) 
+        let conta = (celsius * 9/5) + 32;
+        alert(conta + 'Fº');
+
+    } else if (opcao == 2) {
+        let fahr = parseInt(prompt('Digite a quantidade de graus fahrenheit que deseja converter para celsius:')) 
+        let conta = (fahr -32) * 5/9;
+        alert(conta + 'Cº');
+    }
+
+</script>

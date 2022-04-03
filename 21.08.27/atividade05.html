@@ -1,0 +1,59 @@
+Escreva um programa para ler 3 valores inteiros (considere que não serão lidos valores iguais) e escrevê-los em ordem crescente.
+
+<script>
+
+    var v1 = parseInt(prompt('Digite seu primeiro valor inteiro'));
+    var v2 = parseInt(prompt('Digite seu segundo valor inteiro'));
+    var v3 = parseInt(prompt('Digite seu terceiro valor inteiro'));
+    
+    var menor;
+    var medio;
+    var maior;
+
+    if (v1 > v2 && v1 > v3) {
+        maior = v1
+    } else if (v1 < v2 && v1 < v3) {
+        menor = v1;
+    } else medio = v1;
+
+    if (v2 > v1 && v2 > v3) {
+        maior = v2;
+    } else if (v2 < v1 && v2 < v3) {
+        menor = v2;
+    } else medio = v2;
+
+    if (v3 > v1 && v3 > v2) {
+        maior = v3;
+    } else if (v3 < v1 && v3 < v2) {
+        menor = v3;
+    } else medio = v3;
+
+    alert('O menor valor é ' + menor + ', o valor medio é ' + medio + ', e o valor mais alto é ' + maior + '.');
+
+    /*
+    var a = 50
+    var b = 30
+    var c = 10
+
+    if ( a < b) {
+        var aux = a;
+        a = b;
+        b = aux;
+    }
+
+    if (a > c) {
+        var aux = a;
+        a = c;
+        c = aux;
+    }
+
+    if (b > c) {
+        var aux = a;
+        b = c;
+        c = aux;
+    }
+
+    console.log(a, b, c)
+    */
+
+</script>

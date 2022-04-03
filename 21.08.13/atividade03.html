@@ -1,0 +1,16 @@
+Uma determinada loja precisa de um programa para calcular o valor de desconto. 
+O atendente irá informar o valor total da compra e logo após o valor do desconto, após o programa irá informar o valor que o cliente irá informar o valor total da compra e 
+logo após o valor do desconto, após o programa irá informar que o valor que o cliente irá pagar o valor do desconto.
+
+<script>
+    var Valor = prompt('Digite o valor total da compra');
+    var valor = parseInt(Valor);
+  
+    var Desconto = prompt('Digite o valor de desconto');
+    var desconto = parseInt(Desconto);
+    var descontofinal = valor*desconto/100;
+
+    var valorfinal = valor - descontofinal;
+
+    alert('O desconto foi de ' + descontofinal + ' e o valor final será: ' + valorfinal)
+</script>

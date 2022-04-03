@@ -1,0 +1,30 @@
+Crie duas variáveis e atribua um valor qualquer, após trocar o valor de uma para outra. 
+Por exemplo: a = 20 e b = 30, passe o valor de a para b,  b para a.
+
+
+<script>
+    
+    var valorA = parseInt(prompt('Digite o valor A'));
+    var valorB = parseInt(prompt('Digite o valor B'));
+    var valorC = valorA
+
+    var valorA = valorB;
+    var valorB = valorC;
+
+    alert('O A agora é ' + valorA + ' e o B agora é ' + valorB + '.');
+
+    /*  
+        Gabarito
+
+        var a = 20,
+        var b = 30;
+
+        var aux = a;
+        
+        a = b;
+        b = aux;
+
+        console.log('A: ' + a + ' B: ' + b);
+
+    */
+</script>

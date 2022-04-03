@@ -1,0 +1,22 @@
+Escreva um algoritmo que leia 3 números inteiros e mostre o maior deles.
+
+<script>
+
+    var valor01 = parseInt(prompt('Insira o primeiro valor:'));
+    var valor02 = parseInt(prompt('Insira o segundo valor:'));
+    var valor03 = parseInt(prompt('Insira o terceiro valor:'));
+
+    if (valor01 > valor02 && valor01 > valor03) {
+        alert('O primeiro valor é o mais alto!');
+
+    } else if (valor02 > valor01 && valor02 > valor03) {
+        alert('O segundo valor é o mais alto!');
+
+    } else if (valor03 > valor01 && valor03 > valor02) {
+        alert('O terceiro valor é o mais alto!');
+
+    } else {
+        alert('Alguns valores estão se repetindo. Favor, inserir valores diferentes.')
+    }
+
+</script>
